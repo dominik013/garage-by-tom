@@ -1,0 +1,31 @@
+---
+import '../styles/mvp.css';
+const { title = 'Passt in keine Schublade.', description = 'Kaffee im Häferl. Was Gutes auf dem Teller. Motorräder im Kopf. Und Platz für dich. garage by tom in Mattighofen.' } = Astro.props;
+const current = Astro.url.pathname;
+const navigation = [{href:'/anfahrt/',label:'Anfahrt & Öffnungszeiten'},{href:'/tagesmenue/',label:'Tagesmenü'},{href:'/speisekarte/',label:'Speisekarte'}];
+---
+<!doctype html>
+<html lang="de">
+ <head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content={description} /><meta name="robots" content="noindex, nofollow" /><meta name="theme-color" content="#171717" />
+  <title>{title} | garage by tom</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg?v=logo-g" /><link rel="preload" href="/fonts/barlow.ttf" as="font" type="font/ttf" crossorigin />
+ </head>
+ <body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt</a>
+  <header class="site-header"><div class="container header-inner">
+   <a class="brand-logo" href="/" aria-label="garage by tom – Startseite"><img src="/garage-by-tom.svg" width="556" height="205" alt="garage by tom" /></a>
+   <nav class="desktop-nav" aria-label="Hauptnavigation">{navigation.map(item=><a href={item.href} aria-current={current===item.href?'page':undefined}>{item.label}</a>)}</nav>
+   <details class="mobile-nav" id="mobile-navigation"><summary><span>Menü</span><span class="menu-lines" aria-hidden="true"></span></summary><nav aria-label="Mobile Hauptnavigation"><a href="/">Startseite</a>{navigation.map(item=><a href={item.href} aria-current={current===item.href?'page':undefined}>{item.label}</a>)}</nav></details>
+  </div></header>
+  <main id="inhalt"><slot /></main>
+  <footer class="site-footer"><div class="container footer-top"><a class="brand-logo" href="/" aria-label="garage by tom – Startseite"><img src="/garage-by-tom.svg" width="556" height="205" alt="garage by tom" /></a><p>Kaffee. Küche. Motorradkultur.<br/>Auf unsere Art.</p><a class="text-link" href="/speisekarte/">Zur Speisekarte</a></div><div class="container footer-bottom"><span>garage by tom · Mattighofen</span><a href="/anfahrt/">Anfahrt &amp; Öffnungszeiten </a><a href="/impressum/" aria-current={current==='/impressum/'?'page':undefined}>Impressum</a><a href="#">Nach oben </a></div></footer>
+  <script>
+   const mobile = document.querySelector<HTMLDetailsElement>('#mobile-navigation');
+   mobile?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { mobile.open=false; }));
+   document.addEventListener('keydown', event => { if(event.key==='Escape' && mobile?.open){mobile.open=false;mobile.querySelector('summary')?.focus();} });
+   document.addEventListener('click', event => {if(mobile?.open && event.target instanceof Node && !mobile.contains(event.target)) mobile.open=false;});
+  </script>
+ </body>
+</html>

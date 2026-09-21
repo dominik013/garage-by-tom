@@ -1,0 +1,41 @@
+{
+  "period": "",
+  "included": "Inklusive Tagessuppe oder Green Bowl.",
+  "days": [
+    {
+      "day": "Montag",
+      "name": "Erdäpfel-Gnocchi",
+      "description": "Ratatouille | Burrata | Rucola | Basilikum",
+      "price": "12,90",
+      "visible": true
+    },
+    {
+      "day": "Dienstag",
+      "name": "Krautfleckerl",
+      "description": "Röstzwiebel | Pilze | Crème fraîche",
+      "price": "12,90",
+      "visible": true
+    },
+    {
+      "day": "Mittwoch",
+      "name": "Gegrilltes Hühnerbrüstchen",
+      "description": "Eierschwammerlsauce | Erdäpfelrösti",
+      "price": "12,90",
+      "visible": true
+    },
+    {
+      "day": "Donnerstag",
+      "name": "Hascheeknödel",
+      "description": "Kümmelknusper | Sauerkraut",
+      "price": "12,90",
+      "visible": true
+    },
+    {
+      "day": "Freitag",
+      "name": "Gebackenes Schollenfilet",
+      "description": "Erdäpfel-Gurkensalat | Sauce Tartare",
+      "price": "12,90",
+      "visible": true
+    }
+  ]
+}

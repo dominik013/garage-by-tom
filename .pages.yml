@@ -1,0 +1,109 @@
+content:
+  - name: wochenmenue
+    label: Wochenmenü
+    type: file
+    path: src/content/menus/wochenmenue.json
+    format: json
+    fields:
+      - name: period
+        label: Zeitraum (optional)
+        type: string
+        default: ""
+        description: 'Zum Beispiel: 21. bis 25. September. Nur eine Anzeige, keine automatische Zeitplanung. Speichern veröffentlicht die Änderung nach dem Website-Build.'
+      - name: included
+        label: Im Menü enthalten
+        type: string
+        required: true
+        description: Dieser Text erscheint auch auf der Startseite.
+      - name: days
+        label: Tagesmenüs
+        type: object
+        list:
+          max: 5
+          collapsible:
+            collapsed: true
+            summary: '{fields.day} – {fields.name}'
+        fields:
+          - name: day
+            label: Wochentag
+            type: select
+            required: true
+            options:
+              values: [Montag, Dienstag, Mittwoch, Donnerstag, Freitag]
+          - name: visible
+            label: Auf der Website anzeigen
+            type: boolean
+            default: true
+          - name: name
+            label: Gericht
+            type: string
+            required: true
+          - name: description
+            label: Beschreibung und Beilagen
+            type: text
+            required: true
+          - name: price
+            label: Preis in Euro
+            type: string
+            required: true
+            pattern:
+              regex: '^\d+,\d{2}$'
+              message: 'Bitte z. B. 12,90 eingeben, ohne Eurozeichen.'
+  - name: speisekarte
+    label: Speisekarte
+    type: file
+    path: src/content/menus/speisekarte.json
+    format: json
+    fields:
+      - name: categories
+        label: Kategorien
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{fields.title}'
+        fields:
+          - name: title
+            label: Überschrift
+            type: string
+            required: true
+          - name: id
+            label: Kurzname für den Link
+            type: string
+            required: true
+            description: 'Eindeutig je Kategorie, z. B. hauptrennen. Bestehende Kurznamen möglichst beibehalten.'
+            pattern:
+              regex: '^[a-z][a-z0-9-]*$'
+              message: Nur Kleinbuchstaben ohne Umlaute, Zahlen und Bindestriche.
+          - name: visible
+            label: Kategorie anzeigen
+            type: boolean
+            default: true
+          - name: dishes
+            label: Gerichte
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: '{fields.name}'
+            fields:
+              - name: name
+                label: Gericht
+                type: string
+                required: true
+              - name: description
+                label: Beschreibung und Beilagen
+                type: text
+                required: true
+              - name: price
+                label: Preis in Euro
+                type: string
+                default: ""
+                description: 'Ohne Eurozeichen. Leer lassen für „Preis auf Anfrage“. Zwei Portionen z. B. 5,90 / 8,90.'
+                pattern:
+                  regex: '^(?:\d+,\d{2}(?: / \d+,\d{2})*)?$'
+                  message: 'Bitte z. B. 12,90 oder 5,90 / 8,90 eingeben.'
+              - name: visible
+                label: Gericht anzeigen
+                type: boolean
+                default: true

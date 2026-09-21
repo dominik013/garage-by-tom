@@ -1,0 +1,286 @@
+{
+  "categories": [
+    {
+      "id": "warm-up",
+      "title": "Warm-up & G’sunds",
+      "dishes": [
+        {
+          "name": "Lass dich überraschen",
+          "description": "Überraschungsgericht",
+          "price": "",
+          "visible": true
+        },
+        {
+          "name": "Marinierter Thunfisch",
+          "description": "Erbsen-Minzsüppchen | Mango-Chili-Chutney | Alge",
+          "price": "15,90",
+          "visible": true
+        },
+        {
+          "name": "Flammkuchen à la Christina",
+          "description": "Speck | Zwiebel | Feta",
+          "price": "12,90",
+          "visible": true
+        },
+        {
+          "name": "Beef Tatar",
+          "description": "Wachtel-Spiegelei | Portweinzwiebel | Toastbrot",
+          "price": "16,80",
+          "visible": true
+        },
+        {
+          "name": "Pimp your Tatar",
+          "description": "Ossietra-Störkaviar, 10-g-Dose, mit Blinis",
+          "price": "24,00",
+          "visible": true
+        },
+        {
+          "name": "Carpaccio vom Kohlrabi",
+          "description": "Forelle | Grünzeug; vegan mit Radieschen und Wasabi-Kaviar",
+          "price": "18,90",
+          "visible": true
+        },
+        {
+          "name": "Superfood-Genuss-Salat",
+          "description": "Zupfsalat | Quinoa | Edamame | Kirschparadeiser | Karotten",
+          "price": "14,50",
+          "visible": true
+        },
+        {
+          "name": "Toms Garage Speedway",
+          "description": "Wildkräuter | Mango-Orangenfilets | Granatapfelkerne | Balsamicodressing",
+          "price": "16,90",
+          "visible": true
+        },
+        {
+          "name": "Backhendl-Affäre",
+          "description": "Knusprige Hendlbruststreifen | Erdäpfel-Vogerlsalat | Kernöl | Paradeiser | Ei",
+          "price": "18,90",
+          "visible": true
+        },
+        {
+          "name": "Knoblauchbrot",
+          "description": "Passende Beilage",
+          "price": "6,20",
+          "visible": true
+        },
+        {
+          "name": "Salzstangerl",
+          "description": "Passende Beilage",
+          "price": "1,20",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "suppen",
+      "title": "Luck in a Cup",
+      "dishes": [
+        {
+          "name": "Klare Rinderkraftsuppe",
+          "description": "Gemüsejulienne und Schnittlauch; wahlweise Frittaten, Kaspressknödel oder Grießnockerl",
+          "price": "5,90",
+          "visible": true
+        },
+        {
+          "name": "Vegane Gemüsesuppe",
+          "description": "Gemüsejulienne und Schnittlauch; wahlweise Frittaten oder Polentanockerl",
+          "price": "5,90",
+          "visible": true
+        },
+        {
+          "name": "Samtsüppchen nach Lust und Laune",
+          "description": "Tagesangebot",
+          "price": "6,90",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "gruen",
+      "title": "Grüner Streifen",
+      "dishes": [
+        {
+          "name": "Erdäpfel-Gnocchi",
+          "description": "Ratatouille | Burrata | Rucola | Basilikum",
+          "price": "18,50",
+          "visible": true
+        },
+        {
+          "name": "Krautfleckerl",
+          "description": "Röstzwiebel | Pilze | Crème fraîche",
+          "price": "14,90",
+          "visible": true
+        },
+        {
+          "name": "Sommergemüse",
+          "description": "Vegan aus dem Schmortopf | Ratatouille | gegrillte Polentaschnitte | Kräuter",
+          "price": "16,90",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "hauptrennen",
+      "title": "Hauptrennen",
+      "dishes": [
+        {
+          "name": "Tomahawk vom Strohschwein",
+          "description": "Caesar Salad | Pommes frites | Pfeffersauce",
+          "price": "28,90",
+          "visible": true
+        },
+        {
+          "name": "Sous-vide Hühnerbrust Supreme",
+          "description": "Cremige Polenta | gegrillte Zucchini | Kreuzkümmel",
+          "price": "25,90",
+          "visible": true
+        },
+        {
+          "name": "Ochsenfetzen",
+          "description": "Paprika | Butternockerl | Paprikasauce",
+          "price": "26,90",
+          "visible": true
+        },
+        {
+          "name": "Sautierte Kalbsleber",
+          "description": "Erdäpfelcreme | Apfel-Zwiebel-Sauce",
+          "price": "21,80",
+          "visible": true
+        },
+        {
+          "name": "PS Burger",
+          "description": "Rind, ca. 200 g | Naturteig-Brioche-Bun | BBQ-Beer-Sauce | Paradeiser | Rucola | Parmesan",
+          "price": "21,90",
+          "visible": true
+        },
+        {
+          "name": "Achleitner Forelle",
+          "description": "Paradeiserragout | gebackene Artischocke | Brennnessel-Gnocchi",
+          "price": "27,00",
+          "visible": true
+        },
+        {
+          "name": "Wiener Schnitzel",
+          "description": "Petersilienerdäpfel | Preiselbeeren | Zitrone",
+          "price": "29,80",
+          "visible": true
+        },
+        {
+          "name": "Wiener Schnitzel vom Schwein",
+          "description": "Petersilienerdäpfel | Preiselbeeren | Zitrone",
+          "price": "16,80",
+          "visible": true
+        },
+        {
+          "name": "Zwergerl-Schnitzerl",
+          "description": "Pommes frites und Toms Ketchup",
+          "price": "5,50",
+          "visible": true
+        },
+        {
+          "name": "Spinatknödel à la Sabrina",
+          "description": "Jederzeit erhältlich",
+          "price": "17,50",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "beilagen",
+      "title": "Toppings & Beilagen",
+      "dishes": [
+        {
+          "name": "Maishendlbrust sous vide",
+          "description": "Topping",
+          "price": "7,90",
+          "visible": true
+        },
+        {
+          "name": "Rinderfiletspitzen",
+          "description": "Topping",
+          "price": "7,90",
+          "visible": true
+        },
+        {
+          "name": "Kräutersaitlinge, gegrillt",
+          "description": "Topping",
+          "price": "6,20",
+          "visible": true
+        },
+        {
+          "name": "Ziegenkäse, karamellisiert",
+          "description": "Topping",
+          "price": "7,90",
+          "visible": true
+        },
+        {
+          "name": "Blue Label Garnelenspieß",
+          "description": "Topping",
+          "price": "7,90",
+          "visible": true
+        },
+        {
+          "name": "Lachs Rouge",
+          "description": "Topping",
+          "price": "7,90",
+          "visible": true
+        },
+        {
+          "name": "Pommes frites",
+          "description": "Inklusive Toms Ketchup",
+          "price": "5,50",
+          "visible": true
+        },
+        {
+          "name": "Süßkartoffel-Pommes",
+          "description": "Sour Cream",
+          "price": "6,90",
+          "visible": true
+        },
+        {
+          "name": "Trüffel-Pommes frites",
+          "description": "Parmesan und Trüffel-Mayonnaise",
+          "price": "8,90",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "dessert",
+      "title": "Finish Line",
+      "dishes": [
+        {
+          "name": "Palatschinken mit Marille",
+          "description": "1 Stück / 2 Stück",
+          "price": "5,90 / 8,90",
+          "visible": true
+        },
+        {
+          "name": "Kaiserschmarrn",
+          "description": "Zwetschkenröster",
+          "price": "14,50",
+          "visible": true
+        },
+        {
+          "name": "Tiramisu",
+          "description": "Cremig und klassisch | Kakao | Schokolade",
+          "price": "8,90",
+          "visible": true
+        },
+        {
+          "name": "Kuchen & Kaffee",
+          "description": "Tagesangebot",
+          "price": "5,90",
+          "visible": true
+        }
+      ],
+      "visible": true
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { location } from '../data/site';
+---
+<Layout title="Impressum" description="Anbieterinformationen und Offenlegung für garage by tom.">
+ <section class="menu-hero container"><a class="back-link" href="/">Zurück zur garage</a><div class="eyebrow orange">RECHTLICHE INFORMATIONEN</div><h1>IMPRESSUM.</h1><div class="menu-intro"><p>Anbieterinformationen und Offenlegung für garage by tom.</p></div></section>
+ <div class="light"><article class="container legal-document section-pad">
+  <p class="legal-intro">Angaben gemäß § 5 ECG und § 25 MedienG sowie, je nach Rechtsform, § 14 UGB oder § 63 GewO.</p>
+  <section aria-labelledby="legal-operator"><h2 id="legal-operator">Betreiber &amp; Kontakt</h2><dl class="legal-details">
+   <div><dt>Anbieter &amp; Medieninhaber</dt><dd>garage by tom<br/><mark>[Vollständiger Firmenname inkl. Rechtsform bzw. Vor- und Nachname]</mark></dd></div>
+   <div><dt>Sitz &amp; Geschäftsanschrift</dt><dd><mark>[Sitzgemeinde und vollständige Anschrift der Niederlassung]</mark></dd></div>
+   <div><dt>Betriebsstandort</dt><dd>{location.street}<br/>{location.city}</dd></div>
+   <div><dt>Kontakt</dt><dd><mark>[E-Mail-Adresse]</mark><br/><mark>[Telefonnummer]</mark></dd></div>
+   <div><dt>Unternehmensgegenstand</dt><dd>Gastronomie – Speisen und Getränke.</dd></div>
+  </dl></section>
+  <section aria-labelledby="legal-trade"><h2 id="legal-trade">Unternehmensangaben</h2><dl class="legal-details">
+   <div><dt>Firmenbuch</dt><dd><mark>[Firmenbuchnummer und Firmenbuchgericht, falls eingetragen]</mark></dd></div>
+   <div><dt>UID-Nummer</dt><dd><mark>[UID-Nummer, falls vorhanden]</mark></dd></div>
+   <div><dt>Gewerbeberechtigung</dt><dd><mark>[Gewerbewortlaut, Betriebsart und Standort laut GISA]</mark></dd></div>
+   <div><dt>Gewerbebehörde</dt><dd><mark>[Zuständige Behörde]</mark></dd></div>
+   <div><dt>Kammerzugehörigkeit</dt><dd><mark>[Wirtschaftskammer und Fachgruppe(n)]</mark></dd></div>
+   <div><dt>Gewerberecht</dt><dd>Gewerbeordnung 1994, abrufbar im <a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10007517" target="_blank" rel="noopener noreferrer">Rechtsinformationssystem des Bundes</a>.</dd></div>
+   <div><dt>Falls zutreffend</dt><dd><mark>[Zusatzangaben je nach Rechtsform bzw. Berufsbezeichnung ergänzen; andernfalls entfernen]</mark></dd></div>
+  </dl></section>
+  <section aria-labelledby="legal-credits"><h2 id="legal-credits">Bildnachweise</h2><p><mark>[Foto-Urheber und Quellen gemäß Nutzungsvereinbarungen]</mark></p></section>
+ </article></div>
+</Layout>

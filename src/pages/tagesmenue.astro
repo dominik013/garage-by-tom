@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { lunch, lunchIncluded, lunchPeriod } from '../data/menu';
+---
+<Layout title="Tagesmenü" description="Das Tagesmenü der garage by tom: Montag bis Freitag, mit Gerichten und Preisen für deine Mittagspause.">
+ <section class="menu-hero container"><a class="back-link" href="/">Zurück zur garage</a><div class="eyebrow orange">TAGESMENÜ / MONTAG BIS FREITAG</div><h1>KURZE PAUSE.<br/><span class="orange">GUTER GESCHMACK.</span></h1><div class="menu-intro"><p>Raus aus dem Alltag. Rein in die garage.<br/>Hier findest du unsere Runde für die Mittagspause.</p></div></section>
+ <div class="menu-surface"><div class="container daily-document section-pad">
+  <section aria-labelledby="daily-week"><div class="category-title"><h2 id="daily-week">Montag – Freitag</h2></div>{lunchPeriod && <p class="eyebrow">{lunchPeriod}</p>}<p class="daily-included">{lunchIncluded}</p>{!lunch.length && <p>Unser nächstes Wochenmenü findest du in Kürze hier.</p>}<ul class="dish-list">{lunch.map(item=><li class="dish"><span class="eyebrow daily-day">{item.day}</span><div class="dish-heading"><h3>{item.name}</h3><span class="dish-price">{item.price} €</span></div><p>{item.description}</p></li>)}</ul></section>
+  <div class="menu-end"><p>Noch mehr Gutes auf der Karte.</p><a class="text-link" href="/speisekarte/">Zur ganzen Speisekarte</a><span>Alle Preise in Euro.</span></div>
+ </div></div>
+</Layout>
