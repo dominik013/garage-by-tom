@@ -2,6 +2,13 @@
 
 Statische Astro-Website mit Startseite, Tagesmenü, Speisekarte, Anfahrt und Impressum. Ohne Reservierungssystem und ohne eigenen Server oder Datenbank.
 
+## Zugänge
+
+- Website: https://garage-by-tom.pages.dev
+- Wochenmenü bearbeiten: https://app.pagescms.org/dominik013/garage-by-tom/main/file/wochenmenue
+- Speisekarte bearbeiten: https://app.pagescms.org/dominik013/garage-by-tom/main/file/speisekarte
+- Quellcode (privat): https://github.com/dominik013/garage-by-tom
+
 ## Lokal
 
 Node.js gemäß `.node-version`, dann:
@@ -22,11 +29,9 @@ Das Ergebnis steht in `dist/`. Die Inhaltsprüfung bricht bei ungültigen Preise
 
 ## Inhalte mit Pages CMS bearbeiten
 
-1. [Pages CMS](https://app.pagescms.org) öffnen und mit GitHub anmelden.
-2. Die Pages-CMS-GitHub-App ausschließlich für `dominik013/garage-by-tom` freigeben.
-3. Repository und Branch `main` auswählen. Die Konfiguration liegt in `.pages.yml`.
-4. **Wochenmenü** oder **Speisekarte** auswählen, ändern und speichern.
-5. Speichern erstellt einen Git-Commit. Nach erfolgreichem Cloudflare-Pages-Build erscheint die Änderung online; die Veröffentlichung ist nicht augenblicklich.
+1. Einen der Editor-Links oben öffnen und mit GitHub anmelden.
+2. **Wochenmenü** oder **Speisekarte** auswählen, ändern und mit **Save** speichern.
+3. Speichern erstellt einen Git-Commit. Nach erfolgreichem Cloudflare-Pages-Build erscheint die Änderung online; die Veröffentlichung ist nicht augenblicklich.
 
 Weitere Bearbeiter können über Pages CMS per E-Mail eingeladen werden; sie brauchen dafür keinen eigenen GitHub-Account. Die Einrichtung und GitHub-App-Freigabe erfolgt über den Repository-Eigentümer.
 
@@ -63,7 +68,7 @@ In Cloudflare **Workers & Pages → Pages → Import an existing Git repository*
 | Stammverzeichnis | leer (Repository-Wurzel) |
 | Node.js | `.node-version` bzw. `NODE_VERSION=24.13.1` |
 
-Cloudflare vergibt eine kostenlose `*.pages.dev`-Adresse mit HTTPS. Der genaue Name hängt von der Verfügbarkeit ab. Die native GitHub-Integration veröffentlicht nach jedem Push auf `main`, auch nach einer Änderung über Pages CMS. Dafür werden keine Cloudflare-Schlüssel in diesem Repository benötigt.
+Das Projekt verwendet die kostenlose Adresse `https://garage-by-tom.pages.dev` mit HTTPS. Die native GitHub-Integration veröffentlicht nach jedem Push auf `main`, auch nach einer Änderung über Pages CMS. Dafür werden keine Cloudflare-Schlüssel in diesem Repository benötigt.
 
 GitHub Actions prüft zusätzlich Tests und Build. Cloudflare führt seine eigene Inhaltsprüfung im Build aus; der GitHub-Workflow ist keine separate Freigabesperre. Beide Dienste unterliegen den jeweiligen kostenlosen Kontingenten.
 
