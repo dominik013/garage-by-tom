@@ -7,7 +7,7 @@ Statische Astro-Website mit Startseite, Tagesmenü, Speisekarte, Anfahrt und Imp
 - Website: https://garage-by-tom.pages.dev
 - Wochenmenü bearbeiten: https://app.pagescms.org/dominik013/garage-by-tom/main/file/wochenmenue
 - Speisekarte bearbeiten: https://app.pagescms.org/dominik013/garage-by-tom/main/file/speisekarte
-- Quellcode (privat): https://github.com/dominik013/garage-by-tom
+- Quellcode: https://github.com/dominik013/garage-by-tom
 
 ## Lokal
 
